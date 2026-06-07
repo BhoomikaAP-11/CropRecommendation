@@ -1,0 +1,31 @@
+
+═══════════════════════════════════════════════════════
+              EDA INSIGHTS SUMMARY
+═══════════════════════════════════════════════════════
+
+DATASET OVERVIEW:
+• Total samples: 2200
+• Features: 7 (N, P, K, temperature, humidity, ph, rainfall)
+• Target: 22 unique crops
+• Class distribution: Perfectly balanced (100 per crop)
+• Missing values: None
+• Duplicates: None
+
+KEY FINDINGS:
+1. Rice requires highest rainfall (200+ mm avg)
+2. Chickpea grows in lowest rainfall conditions
+3. pH range across crops: 4.5 - 9.5
+4. Temperature varies widely: 8°C to 44°C
+5. Cotton needs high temperature, low humidity
+6. Coconut needs both high temperature and humidity
+
+DATA QUALITY: EXCELLENT
+• No preprocessing needed for missing values
+• Balanced classes — no SMOTE/upsampling needed
+• Features have different scales — needs StandardScaler
+
+NEXT STEPS:
+→ Build classification models
+→ Compare 7-8 algorithms
+→ Hyperparameter tuning on best model
+→ Save model + scaler + label encoder
